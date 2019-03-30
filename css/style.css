@@ -25,17 +25,17 @@ button {
   -webkit-transition: color .3s, background-color .3s;
   transition: color .3s, background-color .3s;
   cursor: pointer;
-  outline: 0 !important;
   text-decoration: none;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-button:hover, button:active {
+button:hover,
+button:active {
   color: #fff;
   background-color: #eaa400;
 }
@@ -49,4 +49,5 @@ p {
 div {
   margin: 20px;
 }
+
 /*# sourceMappingURL=style.css.map */
