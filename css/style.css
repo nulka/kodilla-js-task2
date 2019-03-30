@@ -25,6 +25,7 @@ button {
   -webkit-transition: color .3s, background-color .3s;
   transition: color .3s, background-color .3s;
   cursor: pointer;
+  outline: 0 !important;
   text-decoration: none;
   -ms-touch-action: manipulation;
   touch-action: manipulation;

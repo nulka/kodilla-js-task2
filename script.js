@@ -1,17 +1,17 @@
 'use strict';
 
 
-// deklaracje
+// declarations
 
-var output = document.getElementById('converted');
+var output = document.getElementById('print-temp-info');
 
-var buttonCels = document.getElementById('Cels-button');
-var buttonFar = document.getElementById('Far-button');
+var buttonCels = document.getElementById('button-celsius');
+var buttonFar = document.getElementById('button-fahrenheit');
 
 
 var givenData;
-var celsium;
-var tempInFar;
+var celsius;
+var fahrenheit;
 
 var messageCels = 'Podaj temperaturę w stopniach Celsjusza';
 var messageFar = 'Podaj temperaturę w stopniach Farenheita';
@@ -64,7 +64,7 @@ var clothesInfo = function (temp) {
 
 
 
-// mechanika
+// mechanics
 
 
 buttonCels.addEventListener('click', function () {
@@ -77,12 +77,12 @@ buttonCels.addEventListener('click', function () {
 
     } else {
 
-        celsium = givenData;
-        tempInFar = convertCelsToFar(givenData);
+        celsius = givenData;
+        fahrenheit = convertCelsToFar(givenData);
 
-        print('Mamy ' + celsium + ' st. Celsjusza, czyli ' + tempInFar.toFixed(1) + ' st. Farenheita.');
-        waterInfo(celsium);
-        clothesInfo(celsium);
+        print('Mamy ' + celsius + ' st. Celsjusza, czyli ' + fahrenheit.toFixed(1) + ' st. Fahrenheita.');
+        waterInfo(celsius);
+        clothesInfo(celsius);
     }
 
 });
@@ -98,10 +98,10 @@ buttonFar.addEventListener('click', function () {
 
     } else {
 
-        celsium = convertFarToCels(givenData);
+        celsius = convertFarToCels(givenData);
 
-        print('Mamy ' + givenData + ' st. Farenheita, czyli ' + celsium.toFixed(1) + ' st. Celsjusza.');
-        waterInfo(celsium);
-        clothesInfo(celsium);
+        print('Mamy ' + givenData + ' st. Fahrenheita, czyli ' + celsius.toFixed(1) + ' st. Celsjusza.');
+        waterInfo(celsius);
+        clothesInfo(celsius);
     }
 });
